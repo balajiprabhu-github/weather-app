@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="night_mode_label">Night Mode</string>
+    <string name="add_city_label">Add City</string>
+    <string name="city_weather_label">City Weather</string>
 </resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Title_1" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/large_font_size</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="Title_2" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="Sub_Text" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/regular_font_size</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="Body_Regular" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/regular_font_size</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+
+</resources>

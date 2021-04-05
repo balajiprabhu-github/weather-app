@@ -5,13 +5,17 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#000000</color>
+    <color name="black">#000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="sub_text_color">#B2B0B0</color>
+    <color name="sub_text_color">#EAEAEA</color>
 
-    <!--Color by light Theme-->
-    <color name="primaryBackgroundColor">@color/white</color>
-    <color name="primaryTextColor">@color/black</color>
+
+    <!--Color by Dark Theme-->
+    <color name="primaryBackgroundColor">@color/black</color>
+    <color name="primaryTextColor">@color/white</color>
     <color name="secondaryTextColor">@color/sub_text_color</color>
+
+
+
 
 </resources>

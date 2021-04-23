@@ -1,9 +1,10 @@
-package com.balajiprabhu.weather_app.view
+package com.balajiprabhu.weather_app.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.balajiprabhu.weather_app.databinding.ItemCityWeatherBinding
+import com.balajiprabhu.weather_app.view.adapter.CommonViewHolder
 import com.balajiprabhu.weather_app.view_model.HomeWeatherItemViewModel
 
 class WeatherListAdapter() : RecyclerView.Adapter<CommonViewHolder>() {

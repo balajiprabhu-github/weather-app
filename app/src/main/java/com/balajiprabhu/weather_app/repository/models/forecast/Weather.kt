@@ -1,4 +1,4 @@
-package com.balajiprabhu.weather_app.models.forecast
+package com.balajiprabhu.weather_app.repository.models.forecast
 
 data class Weather(
     val description: String,

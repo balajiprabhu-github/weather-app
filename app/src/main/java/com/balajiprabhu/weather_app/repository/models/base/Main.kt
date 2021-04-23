@@ -1,4 +1,4 @@
-package com.balajiprabhu.weather_app.models.base
+package com.balajiprabhu.weather_app.repository.models.base
 
 data class Main(
     val feels_like: Double,

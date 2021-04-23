@@ -1,4 +1,4 @@
-package com.balajiprabhu.weather_app.view
+package com.balajiprabhu.weather_app.view.adapter
 
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView

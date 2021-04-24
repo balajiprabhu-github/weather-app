@@ -1,10 +1,12 @@
 package com.balajiprabhu.weather_app.view_model
 
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.databinding.ObservableBoolean
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ViewModel
+import com.balajiprabhu.weather_app.app.AppPreferences
 import com.balajiprabhu.weather_app.repository.models.base.WeatherResponse
 import com.balajiprabhu.weather_app.repository.network.AppService
 import com.balajiprabhu.weather_app.view.adapter.WeatherListAdapter
@@ -18,6 +20,7 @@ class HomeWeatherViewModel @Inject constructor(
     val weatherListAdapter: WeatherListAdapter
 ) : ViewModel(), LifecycleObserver {
 
+    val isNightModeEnabled = ObservableBoolean(AppPreferences.isNightModeEnabled)
     private val homeWeatherItemViewModels = mutableListOf<HomeWeatherItemViewModel>()
 
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
@@ -51,10 +54,16 @@ class HomeWeatherViewModel @Inject constructor(
 
     fun handleAppTheme(isChecked: Boolean) = if (isChecked) setNightModeOn() else setNightModeOff()
 
-    private fun setNightModeOn() =
+    private fun setNightModeOn() {
+        AppPreferences.isNightModeEnabled = true
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+    }
 
-    private fun setNightModeOff() =
+
+    private fun setNightModeOff() {
+        AppPreferences.isNightModeEnabled = false
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+    }
+
 
 }

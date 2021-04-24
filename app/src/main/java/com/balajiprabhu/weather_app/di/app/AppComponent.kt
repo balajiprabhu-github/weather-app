@@ -1,7 +1,7 @@
 package com.balajiprabhu.weather_app.di.app
 
 import android.app.Application
-import com.balajiprabhu.weather_app.BaseApplication
+import com.balajiprabhu.weather_app.app.BaseApplication
 import com.balajiprabhu.weather_app.di.app.mutlibinding.ViewModelFactoryModule
 import dagger.BindsInstance
 import dagger.Component

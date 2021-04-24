@@ -15,7 +15,4 @@
     <color name="primaryTextColor">@color/white</color>
     <color name="secondaryTextColor">@color/sub_text_color</color>
 
-
-
-
 </resources>

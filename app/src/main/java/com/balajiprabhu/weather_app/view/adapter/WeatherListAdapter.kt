@@ -7,7 +7,7 @@ import com.balajiprabhu.weather_app.databinding.ItemCityWeatherBinding
 import com.balajiprabhu.weather_app.view.adapter.CommonViewHolder
 import com.balajiprabhu.weather_app.view_model.HomeWeatherItemViewModel
 
-class WeatherListAdapter() : RecyclerView.Adapter<CommonViewHolder>() {
+class WeatherListAdapter : RecyclerView.Adapter<CommonViewHolder>() {
 
     private val weatherItemList = mutableListOf<HomeWeatherItemViewModel>()
 

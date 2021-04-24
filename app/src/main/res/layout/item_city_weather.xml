@@ -39,7 +39,7 @@
                     android:id="@+id/image_view_weather"
                     android:layout_width="@dimen/view_medium_large"
                     android:layout_height="@dimen/view_medium_large"
-                    android:src="@{viewModel.weatherIcon}"
+                    android:loadIconUrl="@{viewModel.weatherIcon}"
                     app:layout_constraintEnd_toEndOf="@id/guideline_right"
                     app:layout_constraintTop_toTopOf="@id/guideline_top"
                     tools:src="@drawable/ic_night_mode"

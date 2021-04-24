@@ -1,13 +1,10 @@
 package com.balajiprabhu.weather_app.view_model
 
-import android.graphics.drawable.Drawable
 import androidx.databinding.ObservableField
-import androidx.lifecycle.ViewModel
 
-class HomeWeatherItemViewModel : ViewModel() {
-
-    val temperature = ObservableField<String>("")
-    val city = ObservableField<String>("")
-    val country = ObservableField<String>("")
-    val weatherIcon = ObservableField<Drawable>()
+class HomeWeatherItemViewModel constructor(temperature:String,city:String,country:String,weatherIcon:String) {
+    val temperature = ObservableField<String>(temperature)
+    val city = ObservableField<String>(city)
+    val country = ObservableField<String>(country)
+    val weatherIcon = ObservableField<String>(weatherIcon)
 }

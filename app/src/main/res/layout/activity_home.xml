@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="@style/Body_Regular"
             android:thumb="@drawable/ic_night_mode_switch"
+            android:checked="@{viewModel.isNightModeEnabled}"
             android:onCheckedChanged="@{(compoundButton,isChecked)->viewModel.handleAppTheme(isChecked)}"
             app:layout_constraintEnd_toEndOf="@id/guideline_right"
             app:layout_constraintTop_toTopOf="@id/guideline_top"

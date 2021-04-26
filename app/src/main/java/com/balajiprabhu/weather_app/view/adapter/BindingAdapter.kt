@@ -10,12 +10,13 @@ object BindingAdapter {
 
     @JvmStatic
     @BindingAdapter("android:loadIconUrl")
-    fun loadWeatherIcon(view: View, iconCode: String) {
-        val iconUrl = "http://openweathermap.org/img/w/$iconCode.png"
+    fun setLoadIconUrl(view: View, iconCode: String) {
+        val iconUrl = "http://openweathermap.org/img/wn/10d@2x.png"
         val imageView: ImageView = view as ImageView
         Glide.with(view.context)
-            .load(R.drawable.ic_night_mode)
+            .load(R.drawable.ic_clear_sky_day)
             .into(imageView)
+
     }
 
 }

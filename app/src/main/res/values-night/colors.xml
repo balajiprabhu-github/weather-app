@@ -5,14 +5,22 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#000</color>
+    <color name="black">#000000</color>
+    <color name="dark_primary">#000F1B</color>
+    <color name="black_soft">#01101C</color>
     <color name="white">#FFFFFFFF</color>
     <color name="sub_text_color">#EAEAEA</color>
+    <color name="river_bed">#41515E</color>
+    <color name="outer_space">#2B343C</color>
 
 
     <!--Color by Dark Theme-->
-    <color name="primaryBackgroundColor">@color/black</color>
+    <color name="primaryBackgroundColor">@color/dark_primary</color>
     <color name="primaryTextColor">@color/white</color>
     <color name="secondaryTextColor">@color/sub_text_color</color>
+    <color name="surface_gradient_start">@color/black_soft</color>
+    <color name="surface_gradient_end">@color/outer_space</color>
+    <color name="edit_text_background">@color/outer_space</color>
+
 
 </resources>

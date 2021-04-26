@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_add_city"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_48dp"
+        android:hint="@string/type_city_label"
+        android:maxLines="1"
+        android:inputType="text"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:background="@drawable/bg_edittext_round_corner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_add_city"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="@dimen/view_medium_large"
+        android:layout_marginRight="@dimen/view_medium_large"
+        android:paddingStart="@dimen/view_medium_24"
+        android:paddingLeft="@dimen/view_medium_24"
+        tools:ignore="RtlSymmetry" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_city"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40dp"
+        app:layout_constraintStart_toEndOf="@+id/edit_text_add_city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/add_label"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_button_round_corner"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

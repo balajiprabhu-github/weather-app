@@ -26,7 +26,6 @@ class AppModule {
                 override fun intercept(chain: Interceptor.Chain): Response {
                     var request = chain.request()
                     request = request.newBuilder()
-                        .addHeader("X-RapidAPI-Key","4fc318d903mshf57c0a4b90734bep15668djsn0fa8ed47953a")
                         .build()
                     return chain.proceed(request)
                 }

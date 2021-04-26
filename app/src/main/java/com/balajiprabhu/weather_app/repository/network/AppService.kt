@@ -8,7 +8,10 @@ import retrofit2.http.Query
 
 interface AppService {
 
-    @GET(value = "/weather")
-    fun getWeatherResponse(@Query("q") query: String) : Single<WeatherResponse>
+    @GET(value = "/data/2.5/weather")
+    fun getWeatherResponse(
+        @Query("q") query: String,
+        @Query("appid") appId: String
+    ) : Single<WeatherResponse>
 
 }

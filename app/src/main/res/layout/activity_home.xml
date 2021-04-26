@@ -20,7 +20,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/Body_Regular"
-            android:thumb="@drawable/ic_night_mode_switch"
             android:checked="@{viewModel.isNightModeEnabled}"
             android:onCheckedChanged="@{(compoundButton,isChecked)->viewModel.handleAppTheme(isChecked)}"
             app:layout_constraintEnd_toEndOf="@id/guideline_right"
@@ -32,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/city_weather_label"
+            android:visibility="invisible"
             app:layout_constraintTop_toTopOf="@id/guideline_top"
             android:textAppearance="@style/Title_2"
             app:layout_constraintStart_toEndOf="@+id/switch_night_mode"
@@ -39,26 +39,33 @@
             app:layout_constraintEnd_toEndOf="parent"
             />
 
-        <androidx.appcompat.widget.AppCompatEditText
+        <include
             android:id="@+id/edit_text_add_city"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="@string/add_city_label"
+            android:layout_margin="@dimen/margin_medium"
+            layout="@layout/component_add_city"
             app:layout_constraintStart_toStartOf="@id/guideline_left"
             app:layout_constraintEnd_toEndOf="@id/guideline_right"
             app:layout_constraintTop_toBottomOf="@+id/text_view_city"
             app:layout_constraintBottom_toTopOf="@+id/recycler_view_city_list"
             />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view_city_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_extra_small"
             app:adapter="@{viewModel.weatherListAdapter}"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintTop_toBottomOf="@+id/edit_text_add_city"
             app:layout_constraintStart_toStartOf="@id/guideline_left"
             app:layout_constraintEnd_toEndOf="@id/guideline_right"
-            />
+            app:spanCount="2"
+            tools:listitem="@layout/item_city_weather"
+            android:layout_marginStart="@dimen/margin_small" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_right"

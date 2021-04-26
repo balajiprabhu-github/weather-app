@@ -19,6 +19,4 @@
         <item name="android:textSize">@dimen/regular_font_size</item>
         <item name="android:textColor">@color/primaryTextColor</item>
     </style>
-
-
 </resources>
